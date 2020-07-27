@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="@dimen/full_width"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_search"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="@dimen/full_width"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/regular_margin"
+                android:layout_marginLeft="@dimen/regular_margin"
+                android:layout_marginEnd="@dimen/regular_margin"
+                android:layout_marginRight="@dimen/regular_margin"
+                android:hint="@string/enter_location"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_input_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingEnd="@dimen/search_field_padding_end"
+                    android:paddingRight="@dimen/search_field_padding_end"
+                    android:singleLine="true"
+                    tools:ignore="RtlSymmetry" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_search_icon"
+                android:layout_width="@dimen/search_icon_width"
+                android:layout_height="@dimen/search_icon_height"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_search"
+                app:layout_constraintBottom_toBottomOf="@+id/til_search"
+                app:layout_constraintEnd_toEndOf="@+id/til_search"
+                app:layout_constraintTop_toTopOf="@+id/til_search" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_current_location"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/btn_use_location_margin_top"
+                android:text="@string/use_current_location"
+                android:textAllCaps="false"
+                app:icon="@drawable/ic_location"
+                app:layout_constraintEnd_toEndOf="@+id/til_search"
+                app:layout_constraintStart_toStartOf="@id/til_search"
+                app:layout_constraintTop_toBottomOf="@+id/til_search" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_popular_cities"
+                style="@style/MaterialAlertDialog.MaterialComponents.Title.Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/popular_cities_margin_top"
+                android:text="@string/popular_cities"
+                app:layout_constraintEnd_toEndOf="@+id/til_search"
+                app:layout_constraintStart_toStartOf="@id/til_search"
+                app:layout_constraintTop_toBottomOf="@+id/btn_current_location" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_montevideo"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/popular_cities_min_width"
+                android:padding="@dimen/no_padding"
+                android:text="@string/montevideo"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toStartOf="@+id/tv_london"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_popular_cities" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_london"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/popular_cities_min_width"
+                android:padding="@dimen/no_padding"
+                android:text="@string/london"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toStartOf="@+id/tv_sao_paulo"
+                app:layout_constraintStart_toEndOf="@+id/tv_montevideo"
+                app:layout_constraintTop_toBottomOf="@+id/tv_popular_cities" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_sao_paulo"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/popular_cities_min_width"
+                android:padding="@dimen/no_padding"
+                android:text="@string/sao_paulo"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toStartOf="@+id/tv_buenos_aires"
+                app:layout_constraintStart_toEndOf="@+id/tv_london"
+                app:layout_constraintTop_toBottomOf="@+id/tv_popular_cities" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_buenos_aires"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/popular_cities_min_width"
+                android:padding="@dimen/no_padding"
+                android:text="@string/buenos_aires_abbr"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toStartOf="@+id/tv_munich"
+                app:layout_constraintStart_toEndOf="@+id/tv_sao_paulo"
+                app:layout_constraintTop_toBottomOf="@+id/tv_popular_cities" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_munich"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/popular_cities_min_width"
+                android:padding="@dimen/no_padding"
+                android:text="@string/munich"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_buenos_aires"
+                app:layout_constraintTop_toBottomOf="@+id/tv_popular_cities" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

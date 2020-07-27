@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">OpenWeatherApp</string>
+    <string name="type_city">Type city…</string>
+    <string name="search">Search</string>
+    <string name="no_city_found">City not found</string>
+    <string name="pressure">Pressure</string>
+    <string name="wind">Wind</string>
+    <string name="humidity">Humidity</string>
+    <string name="temperature">Temperature</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="use_current_location">Use current location</string>
+    <string name="popular_cities">Popular Cities</string>
+    <string name="cancel">Cancel</string>
+    <string name="location_settings">Location Settings</string>
+    <string name="enable_location">Enable Location</string>
+    <string name="location_settings_are_off">Your locations settings are set to \'Off\'.\nPlease enable location to use this feature</string>
+    <string name="location_needed">Need location permission to get current city</string>
+    <string name="permission_denied">Permissions have been denied</string>
+    <string name="please_enter_city_name">Please enter a city name</string>
+    <string name="an_error_has_occurred">An error has occurred</string>
+    <string name="montevideo">Montevideo</string>
+    <string name="london">London</string>
+    <string name="sao_paulo">Sao Paulo</string>
+    <string name="buenos_aires">Buenos Aires</string>
+    <string name="buenos_aires_abbr">B. Aires</string>
+    <string name="weather_at">Weather at %s</string>
+    <string name="munich">Munich</string>
+    <string name="pressure_format">%d hPa</string>
+    <string name="wind_format">%1$.2fm/s %2$d°</string>
+    <string name="humidity_format">%d%%</string>
+    <string name="temperature_format">%.2f°C</string>
+    <string name="min_temperature">Min: %.2f°C</string>
+    <string name="max_temperature">Max: %.2f°C</string>
+    <string name="city_country">%s, %s</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="full_width">0dp</dimen>
+    <dimen name="no_padding">0dp</dimen>
+    <dimen name="progress_bar_translation_z">4dp</dimen>
+    <dimen name="splash_logo_width">100dp</dimen>
+    <dimen name="splash_logo_height">100dp</dimen>
+    <dimen name="regular_margin">32dp</dimen>
+    <dimen name="search_field_padding_end">55dp</dimen>
+    <dimen name="search_icon_width">48dp</dimen>
+    <dimen name="search_icon_height">48dp</dimen>
+    <dimen name="popular_cities_min_width">50dp</dimen>
+    <dimen name="popular_cities_margin_top">25dp</dimen>
+    <dimen name="btn_use_location_margin_top">8dp</dimen>
+    <dimen name="current_weather_general_padding">20dp</dimen>
+    <dimen name="city_name_current_margin_top">20dp</dimen>
+    <dimen name="city_name_font_size">30sp</dimen>
+    <dimen name="condition_icon_width">100dp</dimen>
+    <dimen name="condition_icon_height">100dp</dimen>
+    <dimen name="condition_icon_margin_top">15dp</dimen>
+    <dimen name="condition_status_margin_top">10dp</dimen>
+    <dimen name="condition_status_font_size">20sp</dimen>
+    <dimen name="temperature_humidity_margin_top">20dp</dimen>
+    <dimen name="current_weather_card_width">160dp</dimen>
+    <dimen name="current_weather_card_height">180dp</dimen>
+    <dimen name="current_weather_card_margin">10dp</dimen>
+    <dimen name="current_weather_card_label_font_size">22sp</dimen>
+    <dimen name="current_weather_card_info_font_size">32sp</dimen>
+    <dimen name="current_weather_card_secondary_info_font_size">16sp</dimen>
+</resources>
